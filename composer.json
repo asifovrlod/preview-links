@@ -1,13 +1,13 @@
 {
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/your-username/preview-links.git"
+            "type": "path",
+            "url": "packages/asifovrlod/preview-links"
         }
     ],
     "require": {
         "statamic/cms": "^5.0",
-        "asifovrlod/preview-links": "dev-main"
+        "asifovrlod/preview-links": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

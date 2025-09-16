@@ -1,0 +1,24 @@
+{
+    "name": "preview-links/statamic-addon",
+    "description": "Generate secure preview URLs for draft collection entries",
+    "type": "statamic-addon",
+    "autoload": {
+        "psr-4": {
+            "PreviewLinks\\": "src/"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Preview Links",
+            "description": "Generate secure preview URLs for draft collection entries"
+        },
+        "laravel": {
+            "providers": [
+                "PreviewLinks\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "statamic/cms": "^5.0"
+    }
+}

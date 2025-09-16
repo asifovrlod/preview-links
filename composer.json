@@ -1,25 +1,14 @@
 {
-    "name": "preview-links/statamic-addon",
-    "description": "Generate secure preview URLs for draft collection entries",
-    "type": "statamic-addon",
-    "autoload": {
-        "psr-4": {
-            "PreviewLinks\\": "src/"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/your-username/preview-links.git"
         }
-    },
-    "extra": {
-        "statamic": {
-            "name": "Preview Links",
-            "description": "Generate secure preview URLs for draft collection entries"
-        },
-        "laravel": {
-            "providers": [
-                "PreviewLinks\\ServiceProvider"
-            ]
-        }
-    },
+    ],
     "require": {
         "statamic/cms": "^5.0",
-        "asifovrlod/preview-links": "*"
-    }
+        "asifovrlod/preview-links": "dev-main"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
